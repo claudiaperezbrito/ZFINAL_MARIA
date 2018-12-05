@@ -39,6 +39,8 @@ ScrollReveal().reveal('#sotoall', { duration:16000 });
 ScrollReveal().reveal('#viruetall', { duration:17000 });
 ScrollReveal().reveal('#carlosall', { duration:18000 });
 
+//ATTRIBUTION FOR SLIDESHOW CODE:https://www.khanacademy.org/computing/computer-programming/html-css-js/using-js-libraries-in-your-webpage/pt/using-a-js-library-slideshow-library
+
 let slideShow = function(container) {
     this.images = [];
     this.curImage = 0;
