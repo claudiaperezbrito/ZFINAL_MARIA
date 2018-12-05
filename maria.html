@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hurricane Maria</title>
+  <!--link  GOOGLE FONTS -->
+  <link href="styles/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin="">
+
+<!--LINK CSS GOES HERE, if you need it-->
+
+</head>
+<body>
+  <header>
+  <h1>Puerto Rico: Life After Maria</h1>
+
+    <div id="myname" >
+
+        <p>A Website by Claudia Perez Brito</p>
+
+    </div>
+
+  </header>
+
+
+  <div id="coverpage">
+  <div class="hiddentext" id="intro">
+    <p>On September 20, 2017 Hurricane Maria made landfall on Puerto Rico over the southeastern city of Yabucoa as a category 4 hurricane. It continued its course traveling over the central mountainous region of the island. Hurricane Maria left thousands without power and a home. A year later, Puerto Ricans in some regions still struggle with access to electricity or have not found means to repair their homes.
+      <div id="introsent"><p><b>THIS IS PUERTO RICO ONE YEAR AFTER HURRICANE MARIA.</b></p> </div>
+  </div> <!--hiddentext DIV-->
+  </div> <!--end of cover page div-->
+<div class="sectioncontainers" id="map1container">
+  <div id="map1"></div>
+</div>
+  <!--<<div id="hurvid">
+    <video controls width="800">
+      <source src="videos/maria_satellite_nasa.mp4" width="800" height="400" poster="videos/hurvidpic.png" controls autoplay>
+  </video>
+  <p>This animation of NOAA's GOES East satellite imagery from Sept. 21 at 7:45 a.m. EDT (1145 UTC) to Sept. 23 ending at 7:45 a.m. EDT (1145 UTC) shows Jose becoming a post-tropical storm winding down near New England while Hurricane Maria moved over Puerto Rico and toward the Bahamas. Source:<a href="https://images.nasa.gov/details-NHQ_2017_0923_Satellite%20Animation%20Shows%20Hurricane%20Maria%20and%20Post-Tropical%20Storm%20Jose.html"> NASA</a></p>
+</div>-->
+
+<div class="titles" id="genteheader">
+  <h2>People</h2>
+
+</div>
+
+<div class="sectioncontainers" id="peoplecontainer">
+  <div class="introex" id="peopleintro">
+    <p>A year after Hurricane Maria many Puerto Ricans still struggled to pick up all the pieces in their lives in hopes to return to normalcy. Some spent almost a year without electricity, some continue living with blue tarps as roofs, and some lost absolutely everything. For Puerto Ricans that experienced the hurricane first-hand there will always be a "before" and "after" Hurricane Maria. </p>
+  </div>
+  <div id="peoplechoice">
+    <p><b>Click on their pictures to learn their stories.</b></p>
+  </div>
+<div id="gentecontainer">
+  <div id="mariaall">
+      <img class="peoplethumb" id="mariathumb" src="images/mariathumb.jpg" alt="Maria Gonzalez">
+      <div class="peoplequote">
+      <p><i>“Abuela! Maria took everything!”</i></p>
+      </div>
+        <div class="picandstory" id="mariag">
+          <img src="images/maria1.jpg" alt="Maria Gonzalez">
+          <p> Maria Gonzalez lost everything after Hurricane Maria slammed into Puerto Rico. The storm’s deluge forced authorities to open a flood gate in the Rio de la Plata dam. Toa Baja residents were given no warning and in a matter of minutes her home and many others were flooded. <i>Photo by Claudia Perez Brito </i></p>
+        </div>
+  </div>
+  <div id="harryall">
+      <img class="peoplethumb" id="harryvivthumb" src="images/harryvivthumb.jpg" alt="Harry and Vivian">
+      <div class="peoplequote">
+      <p><i>“God opened up all the faucets from the sky.”</i></p>
+      </div>
+        <div class="picandstory" id="harry">
+          <img src="images/harryviv1.jpg" alt="Harry and Vivian">
+          <p> Harry and Vivian are residents of Utuado and the Owners of what was known as Rancho Marina. It was a restaurant that was rated highly on TripAdvisor but their little paradise was destroyed by the hurricane. A business that took them years to build up was gone overnight. <i> Photo by Kaitlin Hall. </i></p>
+        </div>
+    </div>
+    <div id="tontiall">
+      <img class="peoplethumb" id="tontithumb" src="images/tontithumb.jpg" alt="Jose Saldaña">
+      <div class="peoplequote">
+      <p><i>“Diesel, oil, air filter, diesel filter, oil filter — I have spent $60,000.”</i></p>
+      </div>
+        <div class="picandstory" id="tonti">
+          <img src="images/tonti1.jpg" alt="Tonti">
+          <p> Jose Saldaña better known as Tonti lives in "El Yunque National Forest". On Aug.15 when Puerto Rico's Power Authority announced they had restored electricity to 100 percent of their clients, Tonti still remained without power. He'd spent over $60,000 on generators to keep his business open and had been almost a year without power. <i>Photo by Kaitlin Hall. </i></p>
+        </div>
+    </div>
+    <div id="gregall">
+      <img class="peoplethumb" id="gregthumb" src="images/gregoriathumb.jpg" alt="Gregoria Delgado Aponte">
+      <div class="peoplequote">
+      <p><i>“I said, ‘My God, do not let anything happen to me.”</i></p>
+      </div>
+        <div class="picandstory" id="greg">
+          <img src="images/gregoria1.jpg" alt="Doña Gregoria">
+          <p> Gregoria Delgado Aponte lives in the mountains of Trujillo Alto. The night of Hurricane Maria she witnessed her roof be torn off plank by plank. A year after the hurricane a church group are the ones helping her rebuild her home. Aponte faced the problem of not having a property title, which is a requirement <a href="https://www.fema.gov/news-release/2018/03/10/fema-provides-alternatives-verifying-proof-ownership-puerto-rico"> by FEMA </a> to receive assistance in rebuilding homes.<i> Photo by Kaitlin Hall. </i></p>
+        </div>
+    </div>
+    <div id="sotoall">
+      <img class="peoplethumb" id="sotothumb" src="images/sotosotothumb.jpg" alt="Pablo Soto Soto">
+      <div class="peoplequote">
+      <p><i>“Everything needs to be demolished and rebuilt again.”</i></p>
+      </div>
+        <div class="picandstory" id="soto">
+          <img src="images/sotosoto1.jpg" alt="Pablo Soto Soto">
+          <p> Pablo Soto Soto lives in Yabucoa and a year after Hurricane Maria he lives with a blue tarp as a roof. Soto lacking a property title like many other Puerto Ricans has been an impediment for him to receive help to finish repairing his home. <i>Photo by Claudia Perez Brito </i></p>
+        </div>
+    </div>
+    <div id="viruetall">
+      <img class="peoplethumb" id="viruetthumb" src="images/modestoviruetthumb.jpg" alt="Modesto Viruet">
+      <div class="peoplequote">
+      <p><i>“It took the house. It took this one, it took that one.”</i></p>
+      </div>
+      <div class="picandstory" id="viruet">
+        <img src="images/modestoviruet1.jpg" alt="Modesto Viruet">
+        <p> Modesto rode out the storm in the basement of his home, with his wife, who had to sweep the water out the door to keep the area from flooding. But they could not save their house. <i>Photo by Gisselle Garcia </i></p>
+      </div>
+    </div>
+    <div id="carlosall">
+      <img class="peoplethumb" id="carlosvargasthumb" src="images/carlosvargasthumb.jpg" alt="Carlos Bonnet-Vargas">
+      <div class="peoplequote">
+      <p><i>“Right now I eat one time a day.”</i></p>
+      </div>
+        <div class="picandstory" id="carlosvargas">
+          <img src="images/carlosvargas1.jpg" alt="Carlos Bonnet-Vargas">
+          <p> Hurricane Maria took his kiosk, inventory and savings. Then, he was denied financial assistance and food stipends from (FEMA) and the Puerto Rican government.His energy bills have gone up and he now eats only once a day because that’s all he can afford. <i>Photo by Gisselle Garcia </i></p>
+        </div>
+    </div>
+</div> <!--end of gentecontainer-->
+</div> <!--end of section of GENTE-->
+<div class="sectioncontainers" id="map2container">
+  <div id="map2explain">
+  <p>The map below shows the locations of the homes of the individuals above.</p>
+  </div>
+
+  <div id="map2"></div>
+</div>
+
+<div class="sections" id="animales">
+  <div class="titles" id="animalsheader">
+  <h2>Animals</h2>
+</div>
+<div class="sectioncontainers" id="animalcontainer">
+  <div class="introex" id="animalesexplained">
+    <p>Puerto Rico's stray animal crisis intensified after Hurricane Maria. The U.S. Humane Society had to take control of the island's animal welfare. In conjuction with the island's government the <a href="https://www.humanesociety.org/news/historic-initiative-launched-spayneuter-over-20000-dogs-and-cats-puerto-rico"> ‘Spayathon for Puerto Rico’</a> initiative was started with the hopes of sterilizing 20,000 animals in low-income neighborhoods. </p>
+  </div>
+  <div id="animalslideshow">
+    <img src="images/prave1.jpg" alt="Pigs on a San Juan street.">
+    <img src="images/pigst1.jpg" alt="Pigs on a San Juan street.">
+    <img src="images/dogeats1.jpg" alt="Dog eats food.">
+    <img src="images/anafood1.jpg" alt="Ana Victoria Pardo grabs food bag.">
+    <img src="images/foodpour1.jpg" alt="Ana Victoria Pardo pours food for the dogs.">
+    <img src="images/victoria1.jpg" alt="Ana Victoria Pardo and her friend take a break while feeding dogs.">
+    <img src="images/victoriaana1.jpg" alt="Profile photograph of Ana Victoria Pardo.">
+</div>
+</div>
+</div>
+
+<div class="titles" id="powerheader">
+  <h2>Power</h2>
+  <div class="introex" id="powerintro">
+  </div>
+</div>
+<div class="sectioncontainers" id="powercontainer">
+  <div id="fortaleza">
+      <h3> Government of Puerto Rico</h3>
+      <img id="gob" src="images/fortaleza2.jpg" alt="Press room of La Fortaleza">
+      <p><i>Photo by Claudia Perez Brito</i></p>
+        <div class="poderex" id="govtexplanation">
+        <p> This is the explanation for government.</p>
+        </div>
+  </div>
+  <div id="powerauthority">
+      <h4 class="titles" id="titulo3"> Power Authority of Puerto Rico</h3>
+      <img id="aee" src="images/powerauthority2.jpg" alt="Puerto Rican Power Authority">
+      <p><i>Photo by Claudia Perez Brito</i></p>
+        <div class="poderex" id="powerexplanation">
+        <p> This is the explanation for Power Authority.</p>
+        </div>
+  </div>
+</div>
+
+<!--<footer>
+    <p>This site was created by Claudia Perez Brito as a project for the Intro to Web Apps (JOU3363) course at the University of Florida. Photographs on the site were by Claudia Perez Brito, <a href="https://www.kaitlinhallphotography.com/">Kaitlin Hall</a> & <a href="https://twitter.com/gissellenews">Gisselle Garcia</a>. All photographs on the site were used with permission.
+</footer>-->
+
+
+<!--mi js scripts-->
+<script src="https://unpkg.com/scrollreveal"></script> <!--scroll reveal-->
+<script src="js/jquery-slim.min.js"></script>
+<script src="js/mariajs.js"></script>
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+<script src="js/map.js"></script>
+  <!--DO NOT DELETE BELOW THIS COMMENT. BODY & HTML MUST BE PRESENT-->
+</body>
+</html>

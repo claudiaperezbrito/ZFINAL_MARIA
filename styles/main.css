@@ -1,0 +1,228 @@
+/* css begins below */
+
+body {
+  background: #000;
+  font-family: 'Georgia','Palatino', serif;
+  margin:0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background: #000;
+    color: #D3D3D3;
+    padding:none;
+    margin: 0;
+}
+#myname {
+    display: flex;
+    list-style:none;
+    text:#D3D3D3;
+    margin-right: 1rem;
+    margin-top:1.9rem;
+    padding-right: 2.1rem;
+    font-family: 'Trebuchet MS' , sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+}
+
+
+h1 {
+    padding-left:2rem;
+    color:#D3D3D3;
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Trebuchet MS' , sans-serif;
+}
+
+p {
+  color:#fff;
+}
+.hiddentext {
+  background: #000;
+  opacity: 0.8;
+  color:#fff;
+  font-size:1.75rem;
+  margin: 4rem;
+  margin-top: 4rem;
+  line-height:3rem;
+  padding:.5rem;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+#introsent {
+  text-align: center;
+}
+.introex {
+  font-size: 1.7rem;
+  line-height: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+#map2 {
+  height: 600px;
+  margin: auto;
+  width: 800px;
+  background: #000;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+#map1 {
+  height: 600px;
+  margin: auto;
+  width: 800px;
+  background: #000;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+#map2explain{
+  margin:auto;
+  display: flex;
+  justify-content: center;
+  width: 800px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#hurvid {
+  height: 600px;
+  margin: auto;
+  width: 800px;
+  opacity: 0.8;
+  z-index: 2;
+}
+#firstquest {
+  display: flex;
+  justify-content: center;
+}
+#coverpage {
+  margin:0;
+  padding:8rem;
+  background: url("/Users/Claudia/Documents/AAAUF_FALL_18/JOU3363_WebApps/1FINALPROJ/images/prflag2.jpg") no-repeat;
+  background-size: 100%;
+
+}
+
+#peoplechoice {
+  margin:auto;
+  display: flex;
+  justify-content: center;
+  width: 800px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.sectioncontainers {
+  background:#000;
+  color:#fff;
+  margin: auto;
+  width:800px;
+}
+
+.picandstory {
+  opacity: 0.8;
+  color:#fff;
+  font-size: 1.25rem;
+}
+
+.peoplequote {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+#animales {
+  color:#fff;
+}
+
+#animalsheader {
+  margin:0;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  padding:.5rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  color:#000;
+  background: #00004c;
+  display: flex;
+  justify-content:space-between;
+}
+#animalsheader p {
+  font-size: 1.75rem;
+  line-height: 2rem;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+  color:#fff;
+  font-family: 'Trebuchet MS' , sans-serif;
+
+}
+
+#genteheader {
+  margin:0;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  padding:.5rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  color:#000;
+  background: #4c0000;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+#powerheader {
+  margin:0;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  padding:.5rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  color:#000;
+  background: #042d04;
+  display: flex;
+  justify-content: space-between;
+}
+
+#powercontainer {
+  display: flex;
+  justify-content: space-around;
+
+}
+#powercontainer p {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+}
+img {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+    padding: 1.3rem;
+    background-color: #333333;
+    color: #fff;
+    margin: 0;
+    font-size: 1.15rem;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+/*pseudo links and their colors*/
+a {
+    color: #fff;
+    text-decoration:underline;
+}
+a:hover {
+    color: #A1D1F7;
+}
